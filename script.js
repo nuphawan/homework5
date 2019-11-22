@@ -1,16 +1,22 @@
 $(document).ready(function(){
+
 var daily = $(".from-inline");
 var saveDaily =$(".button");
 var MesDaily =$(".daily");
 
 function saveWork() {
-$(".button").on("click", function(){
+MesDaily ="";
+$(".daily").empty();
 var Message = saveDaily;
-if (Message) {
+
+$(".button").on("click", function(){
+    
+if (Message ==="") {
     MesDaily = $(this).daily();
-    $(".daily").text(MesDaily);
+    $(".daily").text(MesDaily.text());
 }
+
 
 });
 
-saveWork(); 
+saveWork();
