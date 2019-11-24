@@ -112,10 +112,10 @@ $(document).ready(function(){
       }
     };
 
-    $(document).on('click','i', function(event) {
+    $(document).on("click","i", function(event) {
       event.preventDefault();  
   
-      if (dailyPlan) { console.log('click pta before '+ planTextArr); }
+      if (dailyPlan) { console.log("click pta before"+ planTextArr); }
   
       let $index = $(this).attr("save-id");
   
